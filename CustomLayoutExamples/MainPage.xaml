@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomLayoutExamples.MainPage"
+             xmlns:local="clr-namespace:CustomLayoutExamples"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <VerticalStackLayout>
+        <HorizontalStackLayout Margin="10" >
+            <Button Text="One"></Button>
+            <Button Text="Two"></Button>
+            <Button Text="Three"></Button>
+            <Button Text="Four"></Button>
+            <Button Text="Five"></Button>
+            <Button Text="Six"></Button>
+            <Button Text="Seven"></Button>
+            <Button Text="Eight"></Button>
+            <Button Text="Nine"></Button>
+            <Button Text="Ten"></Button>
+        </HorizontalStackLayout>
+
+        <local:HorizontalWrapLayout Margin="10" Spacing="5">
+            <Button Text="One"></Button>
+            <Button Text="Two"></Button>
+            <Button Text="Three"></Button>
+            <Button Text="Four"></Button>
+            <Button Text="Five"></Button>
+            <Button Text="Six"></Button>
+            <Button Text="Seven"></Button>
+            <Button Text="Eight"></Button>
+            <Button Text="Nine"></Button>
+            <Button Text="Ten"></Button>
+        </local:HorizontalWrapLayout>
+    </VerticalStackLayout>
+</ContentPage>
