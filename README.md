@@ -31,3 +31,4 @@ So given this XAML:
 
 You'll see something like this:
 
+![A HorizontalWrapLayout](https://github.com/hartez/CustomLayoutExamples/blob/19d2edfed5a0d7764334f05a490d06be85d75049/HorizontalWrapLayout.png "HorizontalWrapLayout")
