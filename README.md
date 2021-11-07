@@ -31,7 +31,7 @@ So given this XAML:
 
 You'll see something like this:
 
-![A HorizontalWrapLayout](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/HorizontalWrapLayout.png "HorizontalWrapLayout")
+![A HorizontalWrapLayout](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/HorizontalWrapLayout.png? "HorizontalWrapLayout")
 
 ## CascadeLayout Example
 
