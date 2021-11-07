@@ -31,8 +31,11 @@ So given this XAML:
 
 You'll see something like this:
 
-![A HorizontalWrapLayout](https://github.com/hartez/CustomLayoutExamples/blob/19d2edfed5a0d7764334f05a490d06be85d75049/HorizontalWrapLayout.png "HorizontalWrapLayout")
+![A HorizontalWrapLayout](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/HorizontalWrapLayout.png "HorizontalWrapLayout")
 
+## CascadeLayout Example
+
+Cascades the items from top left to bottom right, similar to using the "cascade windows" arrangement in an MDI application.
 
 ```
 <local:CascadeLayout Margin="10" Spacing="25">
@@ -49,4 +52,4 @@ You'll see something like this:
 </local:CascadeLayout>
 ```
 
-![A CascadeLayout](https://github.com/hartez/CustomLayoutExamples/blob/19d2edfed5a0d7764334f05a490d06be85d75049/HorizontalWrapLayout.png "HorizontalWrapLayout")
+![A CascadeLayout](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/CascadeLayout.png "HorizontalWrapLayout")
