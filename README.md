@@ -1,5 +1,6 @@
 # CustomLayoutExamples
-Some examples of creating custom layouts for MAUI
+
+Some examples of creating custom layouts for MAUI. These are intended to demonstrate the sorts of things which are possible, and the basics of creating a custom layout. These are not intended as production-ready layouts.
 
 ## Creating Custom Layouts in MAUI
 
@@ -7,6 +8,10 @@ Layouts in MAUI are pretty simple. Most of the work is done by an `ILayoutManage
 
 - `Size Measure(double widthConstraint, double heightConstraint)`
 - `Size ArrangeChildren(Rectangle bounds)`
+
+A `Measure` implementation should call measure on each `IView` in the layout, and should return the total size of the layout given the constraints.
+
+An `ArrangeChildren` implementation should determine where each `IView` should be placed within the given bounds, and should call `Arrange` on each `IView` with its appropriate bounds. The return value should be the actual size of the layout.
 
 ## HorizontalWrapLayout Example
 
