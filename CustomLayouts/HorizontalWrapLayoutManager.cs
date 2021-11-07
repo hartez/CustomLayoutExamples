@@ -3,7 +3,7 @@ using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Layouts;
 using System;
 
-namespace CustomLayoutExamples
+namespace CustomLayouts
 {
     public class HorizontalWrapLayoutManager : StackLayoutManager
     {
@@ -48,7 +48,7 @@ namespace CustomLayoutExamples
 
                     // Start over at 0 
                     currentRowWidth = 0;
-                    currentRowHeight = 0;
+                    currentRowHeight = measure.Height;
                 }
                 else
                 {

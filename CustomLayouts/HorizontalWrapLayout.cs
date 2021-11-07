@@ -1,10 +1,7 @@
-﻿using Microsoft.Maui;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Graphics;
+﻿using Microsoft.Maui.Controls;
 using Microsoft.Maui.Layouts;
-using System;
 
-namespace CustomLayoutExamples
+namespace CustomLayouts
 {
     public class HorizontalWrapLayout : StackLayout
     {

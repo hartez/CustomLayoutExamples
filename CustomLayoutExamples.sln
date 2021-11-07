@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomLayoutExamples", "CustomLayoutExamples\CustomLayoutExamples.csproj", "{26433394-3A05-47D7-8AB7-7827040F9D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutManagerTests", "LayoutManagerTests\LayoutManagerTests.csproj", "{4A620159-204A-490C-8532-DCA0496AE651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomLayouts", "CustomLayouts\CustomLayouts.csproj", "{1F18B464-A72B-4A20-B72D-1B1368AE479C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{26433394-3A05-47D7-8AB7-7827040F9D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26433394-3A05-47D7-8AB7-7827040F9D60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26433394-3A05-47D7-8AB7-7827040F9D60}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4A620159-204A-490C-8532-DCA0496AE651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A620159-204A-490C-8532-DCA0496AE651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A620159-204A-490C-8532-DCA0496AE651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A620159-204A-490C-8532-DCA0496AE651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F18B464-A72B-4A20-B72D-1B1368AE479C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F18B464-A72B-4A20-B72D-1B1368AE479C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F18B464-A72B-4A20-B72D-1B1368AE479C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F18B464-A72B-4A20-B72D-1B1368AE479C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
