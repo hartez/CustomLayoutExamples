@@ -32,3 +32,21 @@ So given this XAML:
 You'll see something like this:
 
 ![A HorizontalWrapLayout](https://github.com/hartez/CustomLayoutExamples/blob/19d2edfed5a0d7764334f05a490d06be85d75049/HorizontalWrapLayout.png "HorizontalWrapLayout")
+
+
+```
+<local:CascadeLayout Margin="10" Spacing="25">
+	<Button Text="One"></Button>
+	<Button Text="Two"></Button>
+	<Button Text="Three"></Button>
+	<Button Text="Four"></Button>
+	<Button Text="Five"></Button>
+	<Button Text="Six"></Button>
+	<Button Text="Seven"></Button>
+	<Button Text="Eight"></Button>
+	<Button Text="Nine"></Button>
+	<Button Text="Ten"></Button>
+</local:CascadeLayout>
+```
+
+![A CascadeLayout](https://github.com/hartez/CustomLayoutExamples/blob/19d2edfed5a0d7764334f05a490d06be85d75049/HorizontalWrapLayout.png "HorizontalWrapLayout")
