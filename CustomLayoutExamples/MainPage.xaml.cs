@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Essentials;
+﻿using Microsoft.Maui.Controls;
 
 namespace CustomLayoutExamples
 {

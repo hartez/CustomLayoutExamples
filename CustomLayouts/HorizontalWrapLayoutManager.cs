@@ -2,6 +2,7 @@
 using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Layouts;
 using System;
+using StackLayoutManager = Microsoft.Maui.Layouts.StackLayoutManager;
 
 namespace CustomLayouts
 {
@@ -76,7 +77,7 @@ namespace CustomLayouts
             return new Size(finalWidth, finalHeight);
         }
 
-        public override Size ArrangeChildren(Rectangle bounds)
+        public override Size ArrangeChildren(Rect bounds)
         {
             var padding = Stack.Padding;
             double top = padding.Top + bounds.Top;
@@ -108,7 +109,7 @@ namespace CustomLayouts
                     currentRowHeight = 0;
                 }
 
-                var destination = new Rectangle(currentX, currentRowTop, child.DesiredSize.Width, child.DesiredSize.Height);
+                var destination = new Rect(currentX, currentRowTop, child.DesiredSize.Width, child.DesiredSize.Height);
                 child.Arrange(destination);
 
                 currentX += destination.Width + _layout.Spacing;
