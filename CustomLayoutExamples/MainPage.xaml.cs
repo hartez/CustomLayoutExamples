@@ -7,6 +7,10 @@ namespace CustomLayoutExamples
 		public MainPage()
 		{
 			InitializeComponent();
+
+			CascadeLayoutButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new CascadeLayoutPage()); };
+			HorizontalWrapLayoutButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new HorizontalWrapLayoutPage()); };
+			ColumnLayoutButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new ColumnLayoutPage()); };
 		}
 	}
 }

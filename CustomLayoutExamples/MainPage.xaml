@@ -2,63 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CustomLayoutExamples.MainPage"
              xmlns:local="clr-namespace:CustomLayouts;assembly=CustomLayouts"
-             BackgroundColor="{DynamicResource SecondaryColor}">
+             BackgroundColor="{DynamicResource SecondaryColor}"
+             Title="Menu">
 
-    <ContentPage.Resources>
-        <Style TargetType="Label" x:Key="Header">
-            <Setter Property="FontAttributes" Value="Bold"/>
-            <Setter Property="Margin" Value="10,15,10,10"/>
-        </Style>
-    </ContentPage.Resources>
+    <VerticalStackLayout Margin="10" Padding="10" Spacing="10">
 
-    <ScrollView>
-        <VerticalStackLayout>
+        <Button Text="Cascade Layout" x:Name="CascadeLayoutButton"></Button>
 
-            <Label Style="{StaticResource Header}" Text="HorizontalStackLayout"  />
+        <Button Text="Horizontal Wrap Layout" x:Name="HorizontalWrapLayoutButton"></Button>
 
-            <HorizontalStackLayout Margin="10" >
-                <Button Text="One"></Button>
-                <Button Text="Two"></Button>
-                <Button Text="Three"></Button>
-                <Button Text="Four"></Button>
-                <Button Text="Five"></Button>
-                <Button Text="Six"></Button>
-                <Button Text="Seven"></Button>
-                <Button Text="Eight"></Button>
-                <Button Text="Nine"></Button>
-                <Button Text="Ten"></Button>
-            </HorizontalStackLayout>
+        <Button Text="Column Layout" x:Name="ColumnLayoutButton"></Button>
 
-            <Label Style="{StaticResource Header}" Text="HorizontalWrapLayout" />
-
-            <local:HorizontalWrapLayout Margin="10" Spacing="5">
-                <Button Text="One"></Button>
-                <Button Text="Two"></Button>
-                <Button Text="Three"></Button>
-                <Button Text="Four"></Button>
-                <Button Text="Five"></Button>
-                <Button Text="Six" WidthRequest="150" HeightRequest="100"></Button>
-                <Button Text="Seven"></Button>
-                <Button Text="Eight"></Button>
-                <Button Text="Nine"></Button>
-                <Button Text="Ten"></Button>
-            </local:HorizontalWrapLayout>
-
-            <Label Style="{StaticResource Header}" Text="CascadeLayout" />
-
-            <local:CascadeLayout Margin="10" Spacing="25">
-                <Button Text="One"></Button>
-                <Button Text="Two"></Button>
-                <Button Text="Three"></Button>
-                <Button Text="Four"></Button>
-                <Button Text="Five"></Button>
-                <Button Text="Six"></Button>
-                <Button Text="Seven"></Button>
-                <Button Text="Eight"></Button>
-                <Button Text="Nine"></Button>
-                <Button Text="Ten"></Button>
-            </local:CascadeLayout>
-
-        </VerticalStackLayout>
-    </ScrollView>
+    </VerticalStackLayout>
 </ContentPage>
