@@ -18,10 +18,15 @@ namespace CustomLayoutExamples
 
             var middle = new Label 
             { 
-                Text = "Middle", 
+                Text = "This column is using a custom class (ColumnLayout) which subclasses VerticalStackLayout. It adds an " +
+                "attached property 'Fill' which can mark an item as 'fill up the remaining available space'. It uses a custom " +
+                "layout manager which converts it at layout time into a single-column Grid with rows for each child; by default " +
+                "each row uses GridLength.Auto, but the items marked as 'Fill' have their rows marked as GridLength.Star. The final " +
+                "result is a single column filling the page.",
                 VerticalTextAlignment = TextAlignment.Center, 
-                HorizontalTextAlignment = TextAlignment.Center, 
-                BackgroundColor = Colors.LightBlue 
+                LineBreakMode = LineBreakMode.WordWrap,
+                BackgroundColor = Colors.LightBlue,
+                Padding = new Thickness(10)
             };
 
             layout.Add(top);

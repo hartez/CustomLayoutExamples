@@ -1,8 +1,9 @@
 ﻿using Microsoft.Maui.Layouts;
+using System.Collections;
 
 namespace CustomLayouts
 {
-    public class ColumnLayout : StackLayout
+    public class ColumnLayout : VerticalStackLayout
     {
         // We'll use an attached property so we don't have to worry about tracking which items are
         // in "Fill" mode locally.

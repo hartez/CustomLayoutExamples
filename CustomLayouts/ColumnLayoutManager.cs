@@ -13,7 +13,7 @@ namespace CustomLayouts
             _columnLayout = layout;
         }
 
-        IGridLayout ToColumnGrid(StackLayout stackLayout)
+        IGridLayout ToColumnGrid(VerticalStackLayout stackLayout)
         {
             Grid grid = new LayoutGrid
             {

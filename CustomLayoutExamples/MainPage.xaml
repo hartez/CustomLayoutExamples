@@ -13,5 +13,7 @@
 
         <Button Text="Column Layout" x:Name="ColumnLayoutButton"></Button>
 
+        <Button Text="Custom Content Column Class"  x:Name="CustomColumnButton"></Button>
+
     </VerticalStackLayout>
 </ContentPage>
