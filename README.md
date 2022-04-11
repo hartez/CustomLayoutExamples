@@ -65,8 +65,12 @@ This is an example of a custom layout which can accomplish the same things as th
  property `Fill` that can be applied to one or more children of the layout. It uses a custom layout manager which converts the VSL at runtime into a single-column Grid. Each 
 child of the VSL gets its own row in the Grid. Normally the rows are set to a height of `Auto`, but children marked as `Fill` get a row height of `*` instead. 
 
+![A ColumnLayout](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/ColumnLayout.png? "ColumnLayout")
+
 ## Custom Single Column Pre-Made Layouts
 
 For folks who constantly find themselves building the same layouts out of grids/stacks/etc, this is an example of creating a custom purpose-built layout class for your own use. It simply subclasses Layout and implements some extra properties/methods from the `IGridLayout` interface. This allows it to be fed into a `GridLayoutManager` to handle the actual layout at runtime. 
 
 The class takes 3 views in its constructor - a header, content, and a footer. All the row/column setup is baked into the custom class, so using it becomes a single line of code wherever we need this fairly standard layout.
+
+![A CustomContentColumn](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/CustomContentColumn.png? "CustomContentColumn")
