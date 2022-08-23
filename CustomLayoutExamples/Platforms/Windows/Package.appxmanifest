@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="B24EFBD9-218F-4D14-81C4-3CEF74169BC6"
+    Name="maui-package-name-placeholder"
     Publisher="CN=User Name"
-    Version="1.0.0.0" />
+    Version="0.0.0.0" />
 
   <Properties>
-    <DisplayName>CustomLayoutExamples</DisplayName>
-    <PublisherDisplayName>Microsoft</PublisherDisplayName>
-    <Logo>Assets\appiconStoreLogo.png</Logo>
+    <DisplayName>$placeholder$</DisplayName>
+    <PublisherDisplayName>User Name</PublisherDisplayName>
+    <Logo>$placeholder$.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -31,22 +31,23 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="CustomLayoutExamples"
-        Description="CustomLayoutExamples"
+        DisplayName="$placeholder$"
+        Description="$placeholder$"
         BackgroundColor="transparent"
-        Square150x150Logo="Assets\appiconMediumTile.png"
-        Square44x44Logo="Assets\appiconLogo.png">
+        Square150x150Logo="$placeholder$.png"
+        Square44x44Logo="$placeholder$.png">
         <uap:DefaultTile
-          Wide310x150Logo="Assets\appiconWideTile.png"
-          Square71x71Logo="Assets\appiconSmallTile.png"
-          Square310x310Logo="Assets\appiconLargeTile.png"
+          Wide310x150Logo="$placeholder$.png"
+          Square71x71Logo="$placeholder$.png"
+          Square310x310Logo="$placeholder$.png"
           ShortName="CustomLayoutExamples">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo"/>
             <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
           </uap:ShowNameOnTiles>
         </uap:DefaultTile >
-        <uap:SplashScreen Image="Assets\appiconfgSplashScreen.png" />
+        <uap:SplashScreen Image="$placeholder$.png"/>
       </uap:VisualElements>
     </Application>
   </Applications>

@@ -72,3 +72,23 @@ For folks who constantly find themselves building the same layouts out of grids/
 The class takes 3 views in its constructor - a header, content, and a footer. All the row/column setup is baked into the custom class, so using it becomes a single line of code wherever we need this fairly standard layout.
 
 ![A CustomContentColumn](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/CustomContentColumn.png? "CustomContentColumn")
+
+## ZStackLayout
+
+Variation of StackLayout which arranges its children atop one another in order.
+
+Works just like a VerticalStackLayout or HorizontalStackLayout, except along the Z-axis. All children are laid out at the origin; the arrangement area's width is determined by the widest child and the height is determined by the tallest child.
+
+Provides a lower-complexity alternative to using a GridLayout to stack Views along the z-axis (e.g., in order to use an Image as a background for another View).
+
+Example usage:
+
+<ZStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+	<Image Source="dotnet_bot.png" WidthRequest="300" HeightRequest="372" HorizontalOptions="Center" />
+
+	<Label Text="Text over the image, aligned to top" FontAttributes="Bold" FontSize="15" TextColor="Orange" HorizontalOptions="Center" VerticalOptions="Start"/>
+	<Label Text="Text right in the middle" FontAttributes="Bold" FontSize="20" TextColor="LightGreen" HorizontalOptions="Center" VerticalOptions="Center"/>
+	<Label Text="This is an easy way to do captions" FontAttributes="Bold" FontSize="16" TextColor="Red" HorizontalOptions="Center" VerticalOptions="End"/>
+</ZStackLayout>
+
+![A ZStack with a robot image and some text over it](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/Zstack.png? "ZStack")
