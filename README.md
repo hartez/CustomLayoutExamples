@@ -83,6 +83,7 @@ Provides a lower-complexity alternative to using a GridLayout to stack Views alo
 
 Example usage:
 
+```
 <ZStackLayout HorizontalOptions="Center" VerticalOptions="Center">
 	<Image Source="dotnet_bot.png" WidthRequest="300" HeightRequest="372" HorizontalOptions="Center" />
 
@@ -90,5 +91,6 @@ Example usage:
 	<Label Text="Text right in the middle" FontAttributes="Bold" FontSize="20" TextColor="LightGreen" HorizontalOptions="Center" VerticalOptions="Center"/>
 	<Label Text="This is an easy way to do captions" FontAttributes="Bold" FontSize="16" TextColor="Red" HorizontalOptions="Center" VerticalOptions="End"/>
 </ZStackLayout>
+```
 
 ![A ZStack with a robot image and some text over it](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/ZStack.png? "ZStack")
