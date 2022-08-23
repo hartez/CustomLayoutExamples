@@ -91,4 +91,4 @@ Example usage:
 	<Label Text="This is an easy way to do captions" FontAttributes="Bold" FontSize="16" TextColor="Red" HorizontalOptions="Center" VerticalOptions="End"/>
 </ZStackLayout>
 
-![A ZStack with a robot image and some text over it](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/Zstack.png? "ZStack")
+![A ZStack with a robot image and some text over it](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/ZStack.png? "ZStack")
