@@ -60,7 +60,7 @@ namespace CustomLayouts
                 child.Arrange(new Rect(x, y, width, height));
 
                 totalWidth = Math.Max(totalWidth, x + width);
-                totalWidth = Math.Max(totalHeight, y + height);
+                totalHeight = Math.Max(totalHeight, y + height);
 
                 x += spacing;
                 y += spacing;
