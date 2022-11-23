@@ -94,3 +94,10 @@ Example usage:
 ```
 
 ![A ZStack with a robot image and some text over it](https://raw.githubusercontent.com/hartez/CustomLayoutExamples/main/ZStack.png? "ZStack")
+
+## Custom LayoutManagers for Existing Layouts
+
+For most customization scenarios, your own custom layout control is the way to go. However, in some extreme situations you may find that you really, really want to change the behavior of an existing layout type without having to actually create a custom layout and use it everywhere.
+
+For those rare scenarios, you can create an ILayoutManagerFactory and use it to replace the default layout manager type with another. The customized Grid example here demonstrates how to achieve that. You simply create your new layout manager type, implement ILayoutManager to return that layout manager for a particular layout type, and register your factory (usually in MauiProgram.cs).
+

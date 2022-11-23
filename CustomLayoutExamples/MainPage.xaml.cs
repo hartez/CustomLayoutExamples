@@ -13,6 +13,7 @@ namespace CustomLayoutExamples
 			ColumnLayoutButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new ColumnLayoutPage()); };
 			CustomColumnButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new CustomColumnPage()); };
             ZStackButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new ZStackLayoutPage()); };
+            CustomManagerButton.Clicked += async (sender, args) => { await Navigation.PushAsync(new CustomizedGridPage()); };
         }
 	}
 }

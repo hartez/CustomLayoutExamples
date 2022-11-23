@@ -17,5 +17,7 @@
 
         <Button Text="ZStack"  x:Name="ZStackButton"></Button>
 
+        <Button Text="Customized Grid"  x:Name="CustomManagerButton"></Button>
+
     </VerticalStackLayout>
 </ContentPage>
