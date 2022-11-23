@@ -99,5 +99,12 @@ Example usage:
 
 For most customization scenarios, your own custom layout control is the way to go. However, in some extreme situations you may find that you really, really want to change the behavior of an existing layout type without having to actually create a custom layout and use it everywhere.
 
-For those rare scenarios, you can create an ILayoutManagerFactory and use it to replace the default layout manager type with another. The customized Grid example here demonstrates how to achieve that. You simply create your new layout manager type, implement ILayoutManager to return that layout manager for a particular layout type, and register your factory (usually in MauiProgram.cs).
+For those rare scenarios, you can create an ILayoutManagerFactory and use it to replace the default layout manager type with your own. The customized Grid example here demonstrates how to achieve that:
 
+- Write your own LayoutManager (e.g.,  [CustomGridLayoutManager.cs](https://github.com/hartez/CustomLayoutExamples/blob/main/CustomLayouts/CustomGridLayoutManager.cs))
+- Create an ILayoutManagerFactory (e.g., [CustomLayoutManagerFactory.cs](https://github.com/hartez/CustomLayoutExamples/blob/main/CustomLayoutExamples/CustomLayoutManagerFactory.cs))
+- Register your factory with the application (e.g., [MauiProgram.cs](https://github.com/hartez/CustomLayoutExamples/blob/main/CustomLayoutExamples/MauiProgram.cs))
+
+Now when the app is rendering a plain-old out-of-the-box Grid (like the one in [CustomizedGridPage.xaml](https://github.com/hartez/CustomLayoutExamples/blob/main/CustomLayoutExamples/CustomizedGridPage.xaml)), it will use your custom manager. 
+
+In this example, the custom manager makes sure that the RowDefinitions for the Grid include enough rows to account for each Grid.Row property set in a child view (a thing you normally have to do at design time). 
